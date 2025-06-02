@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Crypto Analytics Dashboard
 
-## Getting Started
+A modern, feature-rich cryptocurrency analytics dashboard built with Next.js that provides real-time insights into the crypto market.
 
-First, run the development server:
+![Dashboard Preview](public/preview.png)
 
+## 🌟 Features
+
+- **Real-time Crypto Data**: Live data from CoinGecko API for cryptocurrencies and exchanges
+- **Interactive Charts**: Visualize market trends and price movements
+- **Customizable Dashboard**: Personalize your view with favorite coins and preferred layout
+- **User Authentication**: Secure sign-up and login functionality
+- **User Profiles**: Customize your experience with profile avatars and settings
+- **Theme Support**: Toggle between dark and light modes
+- **Responsive Design**: Seamless experience across all devices
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.x or later
+- npm, yarn, or pnpm
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/crypto-dashboard.git
+cd crypto-dashboard
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Create a `.env.local` file in the root directory and add your environment variables:
+```env
+NEXT_PUBLIC_COINGECKO_API_KEY=your_api_key_here
+```
+
+4. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: Tailwind CSS
+- **Data Fetching**: SWR/React Query
+- **Charts**: Chart.js/Recharts
+- **Authentication**: NextAuth.js
+- **Database**: Prisma with PostgreSQL
+- **API**: CoinGecko API
 
-## Learn More
+## 📱 Features in Detail
 
-To learn more about Next.js, take a look at the following resources:
+### Authentication
+- Secure user registration and login
+- Password recovery
+- Social authentication options
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Dashboard
+- Real-time cryptocurrency price tracking
+- Market cap and volume information
+- Historical price charts
+- Exchange rate comparisons
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### User Customization
+- Save favorite cryptocurrencies
+- Custom dashboard layouts
+- Theme preferences (dark/light mode)
+- Profile customization
 
-## Deploy on Vercel
+## 🤝 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [CoinGecko](https://www.coingecko.com/) for providing the cryptocurrency data API
+- [Next.js](https://nextjs.org/) for the amazing framework
+- All contributors who have helped shape this project
+
+## 📧 Contact
+
+Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
+
+Project Link: [https://github.com/yourusername/crypto-dashboard](https://github.com/yourusername/crypto-dashboard)
