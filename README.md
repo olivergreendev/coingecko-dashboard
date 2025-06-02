@@ -38,7 +38,7 @@ yarn install
 pnpm install
 ```
 
-3. Create a `.env.local` file in the root directory and add your environment variables:
+3. Create a `.env` file in the root directory and add your environment variables:
 ```env
 NEXT_PUBLIC_COINGECKO_API_KEY=your_api_key_here
 ```
