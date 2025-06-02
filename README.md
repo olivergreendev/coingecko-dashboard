@@ -69,7 +69,6 @@ pnpm dev
 ### Authentication
 - Secure user registration and login
 - Password recovery
-- Social authentication options
 
 ### Dashboard
 - Real-time cryptocurrency price tracking
@@ -78,10 +77,10 @@ pnpm dev
 - Exchange rate comparisons
 
 ### User Customization
-- Save favorite cryptocurrencies
+- Save favourite cryptocurrencies
 - Custom dashboard layouts
 - Theme preferences (dark/light mode)
-- Profile customization
+- Profile customisation
 
 ## 🤝 Contributing
 
@@ -101,10 +100,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [CoinGecko](https://www.coingecko.com/) for providing the cryptocurrency data API
 - [Next.js](https://nextjs.org/) for the amazing framework
-- All contributors who have helped shape this project
-
-## 📧 Contact
-
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter)
-
-Project Link: [https://github.com/yourusername/crypto-dashboard](https://github.com/yourusername/crypto-dashboard)
+- You for reading this far
