@@ -42,7 +42,7 @@ export function useCoins() {
       }
     };
 
-    fetchCoins();
+    // fetchCoins();
 
     return () => {
       abortController.current?.abort();
