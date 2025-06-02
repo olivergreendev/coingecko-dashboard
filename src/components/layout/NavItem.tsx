@@ -1,3 +1,5 @@
+"use client";
+
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { LucideIcon } from "lucide-react"
@@ -13,15 +15,16 @@ interface NavItemProps {
 
 export function NavItem({ title, href, icon: Icon, variant = "ghost" }: NavItemProps) {
   const pathname = usePathname()
-  const isActive = pathname === href
+  const isActive = pathname === href || pathname.startsWith(`${href}/`)
 
   return (
     <Button
       asChild
-      variant={variant}
+      variant="ghost"
       className={cn(
         "w-full justify-start gap-2",
-        isActive && "bg-accent text-accent-foreground"
+        !isActive && "hover:bg-accent hover:text-accent-foreground",
+        isActive && "!bg-primary !text-primary-foreground hover:!bg-primary hover:!text-primary-foreground"
       )}
     >
       <Link href={href}>

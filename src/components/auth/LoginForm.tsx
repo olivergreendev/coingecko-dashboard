@@ -1,17 +1,12 @@
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { useRouter } from "next/navigation"
 import { useState, FormEvent } from "react"
 import { Loader2 } from "lucide-react"
+import { toast } from "sonner"
 
 export function LoginForm({
   className,
@@ -33,8 +28,9 @@ export function LoginForm({
       // For now, we'll just simulate a successful login
       await new Promise(resolve => setTimeout(resolve, 1000));
 
-      // Redirect to admin page
-      router.push('/admin');
+      // Redirect to dashboard page
+      router.push('/dashboard');
+      toast("Welcome back, Oliver! 👋");
     } catch (error) {
       console.error('Login failed:', error);
     } finally {

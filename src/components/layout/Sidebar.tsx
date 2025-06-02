@@ -1,10 +1,9 @@
 'use client';
 
-import { cn } from "@/lib/utils"
 import { navigationItems } from "@/config/navigation"
 import { NavItem } from "./NavItem"
 
-export default function Sidebar() {
+export function Sidebar() {
   return (
     <aside className="w-64 border-r bg-background">
       <div className="flex h-full flex-col gap-2">

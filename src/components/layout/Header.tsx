@@ -5,7 +5,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react"
 
-export default function Header() {
+export function Header() {
   const router = useRouter();
 
   const [isLoading, setIsLoading] = useState(false);
