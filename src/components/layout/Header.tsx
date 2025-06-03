@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { useState } from "react"
 import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react"
+import { Loader2, LogOut } from "lucide-react"
 
 export function Header() {
   const router = useRouter();
@@ -14,8 +14,6 @@ export function Header() {
     setIsLoading(true);
 
     try {
-      // Here you would typically make an API call to authenticate
-      // For now, we'll just simulate a successful login
       await new Promise(resolve => setTimeout(resolve, 1000));
       router.push('/auth/login');
     } catch (error) {
@@ -34,7 +32,12 @@ export function Header() {
                 <Loader2 className="animate-spin" />
                 Please wait
               </>
-            ) : "Sign Out"}
+            ) : (
+              <>
+                <LogOut className="h-4 w-4" />
+                Sign Out
+              </>
+            )}
           </Button>
         </div>
       </div>

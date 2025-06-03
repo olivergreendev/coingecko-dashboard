@@ -5,6 +5,7 @@ import { useCoins } from '@/hooks/useCoins';
 import { CoinCard } from '@/components/CoinCard';
 import { LoadingSpinner } from '@/components/LoadingSpinner';
 import { ErrorMessage } from '@/components/ErrorMessage';
+import { DataCards } from '@/components/DataCards/DataCards';
 
 export default function DashboardPage() {
   const { coins, isLoading, error } = useCoins();
@@ -19,11 +20,10 @@ export default function DashboardPage() {
   return (
     <div className="space-y-4">
       <h1 className="text-2xl font-medium">Dashboard</h1>
-      <p>
-        Welcome to the admin area. This is where you can manage your application.
-      </p>
 
       {isLoading && <LoadingSpinner />}
+
+      <DataCards />
 
       {!isLoading && randomCoins.length > 0 && (
         <div>
