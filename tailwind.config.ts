@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        satoshi: ['Satoshi', 'sans-serif'],
+      },
       colors: {
         border: "var(--border)",
         input: "var(--input)",

@@ -2,24 +2,28 @@ import { DataCard } from '@/components/DataCards/DataCard';
 
 const MOCK_DATA = [
   {
-    title: 'Total Views',
-    value: '3.5K',
-    valueChange: '0.43%'
+    title: 'Bitcoin',
+    value: '$105,816',
+    valueChange: 0.2,
+    icon: 'https://coin-images.coingecko.com/coins/images/1/small/bitcoin.png?1696501400'
   },
   {
-    title: 'Total Profit',
-    value: '$4.2K',
-    valueChange: '4.35%'
+    title: 'Ethereum',
+    value: '$2,606.75',
+    valueChange: 0.4,
+    icon: 'https://coin-images.coingecko.com/coins/images/279/small/ethereum.png?1696501628'
   },
   {
-    title: 'Total Products',
-    value: '3.5K',
-    valueChange: '2.59%'
+    title: 'Tether',
+    value: '$1.00',
+    valueChange: 0,
+    icon: 'https://coin-images.coingecko.com/coins/images/325/small/Tether.png?1696501661'
   },
   {
-    title: 'Total Users',
-    value: '3.5K',
-    valueChange: '-0.95%'
+    title: 'XRP',
+    value: '$2.26',
+    valueChange: 0.5,
+    icon: 'https://coin-images.coingecko.com/coins/images/44/small/xrp-symbol-white-128.png?1696501442'
   },
 ];
 
@@ -32,6 +36,7 @@ export function DataCards() {
           title={card.title}
           value={card.value}
           valueChange={card.valueChange}
+          icon={card.icon}
         />
       ))}
     </div>

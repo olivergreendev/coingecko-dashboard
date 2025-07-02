@@ -6,6 +6,7 @@ import { CoinCard } from '@/components/CoinCard';
 import { LoadingSpinner } from '@/components/LoadingSpinner';
 import { ErrorMessage } from '@/components/ErrorMessage';
 import { DataCards } from '@/components/DataCards/DataCards';
+import { DataCharts } from '@/components/DataCharts/DataCharts';
 
 export default function DashboardPage() {
   const { coins, isLoading, error } = useCoins();
@@ -24,6 +25,8 @@ export default function DashboardPage() {
       {isLoading && <LoadingSpinner />}
 
       <DataCards />
+
+      <DataCharts />
 
       {!isLoading && randomCoins.length > 0 && (
         <div>
